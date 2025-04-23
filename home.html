@@ -9,53 +9,57 @@
         <script src="JS Files/scroll.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Cantata+One&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-        <title>HARVESTLY</title>
-        <link rel="icon" type="images/x-icon" href="images/logotest.png">
+        <title>Homeplate</title>
+        <link rel="icon" type="images/x-icon" href="images/logo1.png">
 
     </head>
     <body>
         <!-- Navigation Bar -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
-
+        
                 <!-- Logo -->
                 <a class="navbar-brand me-auto" href="#">
-                    <img src="images/logotest.png" class="navLogo">
+                    <img src="images/logo1.png" class="navLogo">
+                    <img src="images/logo2.png" class="navLogo logo2">
                 </a>
-
+        
                 <!-- Tombol responsif -->
-                <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
+        
                 <!-- Menu navigasi -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <hr>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-between margin-navbar" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link underline-hover active" href="home.html">Home</a>
+                            <a class="nav-link underline-hover active" href="">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link underline-hover" href="shop.html">Shop</a>
+                            <a class="nav-link underline-hover" href="">Recipes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link underline-hover" href="cart.html">Cart 
-                                <span class="badge rounded-circle bg-danger ms-2">5</span>
-                            </a>
+                            <a class="nav-link underline-hover" href="">Tips & Tricks</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link underline-hover" href="history.html">History</a>
+                            <a class="nav-link underline-hover" href="">More</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link underline-hover" href="price.html">Today's Prices</a>
-                        </li>
+                        
                     </ul>
+        
+                    <!-- Search bar -->
+                    <form class="d-flex me-5 ms-5" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search recipes..." aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Search</button>
+                    </form>
+                    <!-- Storage button -->
+                    <a href="#" class="btn btn-secondary rounded-pill px-4 me-5">Storage</a>
                 </div>
-                
+
                 <!-- Profile -->
                 <div class="ms-2">
-                    <div class="dropdown ">
-                        <a class="btn btn-light rounded-circle p-0" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="dropdown">
+                        <a class="btn btn-primary rounded-circle p-0" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="images/profile.jpeg" alt="Profile" class="rounded-circle" width="40" height="40">
                         </a>
                         <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="dropdownMenuLink">
@@ -97,13 +101,36 @@
         </nav>
 
         <!--home 1-->
-        <div class="container bg-primary">
+        <div class="container  position-relative">
             <div class="row">
-                <div class="col-md-7 bg-red">
-
+                <div class="col-6 col-md-9 home ">
+                    <div class=" my-5 pt-3">
+                        <h1 style="font-size: 70px; color: var(--green);">Lorem Ipsum Dolor</h1>
+                        <h1 style="font-size: 70px; color: var(--green);">Sit Amet</h1>
+                        <p style="font-size: 30px; opacity: 0.7; padding-top: 15px;" class="cantarell">Lorem ipsum dolor sit amet,</p>
+                        <p style="font-size: 30px; opacity: 0.7;" class="cantarell">consectetur adipiscing elit, </p>
+                        <a href="" class="btn btn-primary mt-5">
+                            <span class="cantarell">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l1.25 5h8.22l1.25-5zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                                </svg>
+                                <span class="ms-3 me-3">Shop Now</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708"/>
+                                    <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708"/>
+                                </svg>
+                            </span>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-md-3 bg-yellow">
-
+                <div class="col-6 col-md-3 position-relative">
+                    <!-- custom-card tetap, tapi dijadikan relatif -->
+                    <div class="custom-card position-relative">
+                        <!-- Gambar diposisikan absolut dan ditarik ke kiri agar setengahnya masuk ke sisi biru -->
+                        <img src="images/sehat.png"
+                            class="position-absolute zstart-1 translate-middle-y"
+                            style="top:40vh;height: 60vh; width:auto; left: -70%;">
+                    </div>
                 </div>
             </div>
         </div>
