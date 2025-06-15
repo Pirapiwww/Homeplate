@@ -1,18 +1,6 @@
 body {
-    font-family: 'Cantata One', serif;
     font-size: 20px;
     background-color: white;
-}
-
-.dropdown-menu {
-    position: absolute; /* Ganti posisi menjadi absolute */
-    left: 50%; /* Posisikan dropdown di tengah */
-    transform: translateX(-50%); /* Geser kembali ke kiri setengah dari lebar dropdown */
-}
-
-.customLink:hover{
-    text-decoration: none !important;
-    color: var(--green) !important;
 }
 footer{
     background-color: var(--cream);
@@ -20,7 +8,7 @@ footer{
 
 }
 
-/* Root Variables */
+/* ROOT COLORS */
 :root {
     --black: #11100F;
     --light-green: #E3F0AF;
@@ -29,6 +17,8 @@ footer{
     --dark-cream: #CDBCAB;
     --cream: #FBF6E9;
 }
+
+/* NAVIGATION BAR */
 .navLogo{
     height: auto;
     width: 7vh;
@@ -43,17 +33,42 @@ nav.navbar {
     font-family: "Figtree", sans-serif;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.me-custom{
-    margin-right: -100vh;
-}
 .navbar-nav .nav-link {
     font-size: 1rem;
     margin: 0 10px;
 }
-
 .navbar-nav {
     flex-wrap: nowrap;
     white-space: nowrap;
+}
+.dropdown-menu {
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+/* FONTS */
+.cantarell{
+    font-family: "Cantarell", sans-serif;
+}
+.figtree{
+    font-family: "Figtree", sans-serif;
+}
+.montserrat{
+    font-family: "Montserrat", sans-serif;
+}
+.felipa{
+    font-family: "Felipa", sans-serif;
+}
+
+/* BUTTONS STYLE */
+.btn-primary{
+    background-color: var(--dark-green) !important;
+    border-color: var(--dark-green) !important;
+}
+.btn-primary:hover{
+    background-color: var(--green) !important;
+    border-color: var(--green) !important;
 }
 .btn-secondary{
     background-color: var(--green) !important;
@@ -67,26 +82,12 @@ nav.navbar {
     font-size: 1rem;
     color: black !important;
 }
-.cantarell{
-    font-family: "Cantarell", sans-serif;
-}
-.figtree{
-    font-family: "Figtree", sans-serif;
-}
-.btn-primary{
-    background-color: var(--dark-green) !important;
-    border-color: var(--dark-green) !important;
-}
-.btn-primary:hover{
-    background-color: var(--green) !important;
-    border-color: var(--green) !important;
-}
 
+/* UNDERLINE ANIMATION */
 .underline-hover {
     position: relative;
     text-decoration: none;
 }
-
 .underline-hover::after {
     content: "";
     position: absolute;
@@ -98,30 +99,107 @@ nav.navbar {
     transform: scaleX(0);
     transition: transform 0.3s ease-in-out;
 }
-
 .underline-hover:hover::after {
     transform: scaleX(1);
 }
-
 .underline-hover.active::after {
     transform: scaleX(1);
     color: var(--green);
-    background-color: var(--green); /* Anda bisa mengubah warna sesuai kebutuhan */
+    background-color: var(--green); 
 }
 
+/* CUSTOM DIV HEIGHT */
 .home{
-    padding-top: 73px;
-    height: 80vh;
+    padding-top: 100px;
+    height: 75vh;
 }
 
+/* DECORATION */
 .custom-card {
-    background-color: #2e9e6f; /* contoh hijau */
-    border-radius: 0 0 0 100px; /* hanya kiri bawah dibulatkan besar */
+    background-color: #2e9e6f; 
+    border-radius: 0 0 0 100px; 
     width: auto;
     height: 70vh;
     position: relative;
 }
+.radius1 {
+    border-radius: 0 50px 0 50px; 
+}
+.radius2 {
+    border-radius: 50px 0 50px 0; 
+}
 
+/* NAVBAR */
+.profile-image {
+    width: 40;
+    height: 40;
+}
+.profile-info{
+    width: 80;
+    height: 80;
+}
+.dropdown-svg{
+    width: 16;
+    height: 16;
+}
+
+/* HOME 1*/
+.home1-heading{
+    font-size: 70px; 
+    color: var(--green);
+}
+.home1-paragraph{
+    font-size: 30px; 
+    opacity: 0.7;
+}
+.home1-svg{
+    width: 30;
+    height: 30;
+}
+.home1-image{
+    top:40vh;
+    height: 70vh; 
+    width:auto; 
+    left: -75%;
+}
+
+/* HOME 2 */
+.home2-imageLeft{
+    width: 100%;
+}
+.home2-imageLeft2{
+    width: 70%;
+}
+.home2-imageRight{
+    width: 100%;
+}
+.home2-imageRight2{
+    width: 70%;
+}
+.home2-flower{
+    width: 200px;
+}
+.home2-hr{
+    width: 35%; 
+    background-color: var(--green); 
+    border: none; 
+    height: 5px; 
+    opacity: 1;
+}
+.home2-paragraph{
+    font-size: 30px; 
+    opacity: 0.7;
+}
+
+/* HOME 3 */
+.home3-bg{
+    background-image: url('images/latar.png'); 
+    width: 100%; 
+    height: 300px;
+}
+.home3-
+
+/* RESPONSIVE WEB */
 @media only screen and (max-width: 767px) {
     
 }
