@@ -16,6 +16,7 @@ footer{
     --dark-green: #118B50;
     --dark-cream: #CDBCAB;
     --cream: #FBF6E9;
+    --green-rgb: 93, 185, 150;
 }
 
 /* NAVIGATION BAR */
@@ -131,16 +132,16 @@ nav.navbar {
 
 /* NAVBAR */
 .profile-image {
-    width: 40;
-    height: 40;
+    width: 40px;
+    height: 40px;
 }
 .profile-info{
-    width: 80;
-    height: 80;
+    width: 80px;
+    height: 80px;
 }
 .dropdown-svg{
-    width: 16;
-    height: 16;
+    width: 16px;
+    height: 16px;
 }
 
 /* HOME 1*/
@@ -153,8 +154,8 @@ nav.navbar {
     opacity: 0.7;
 }
 .home1-svg{
-    width: 30;
-    height: 30;
+    width: 30px;
+    height: 30px;
 }
 .home1-image{
     top:40vh;
@@ -177,7 +178,7 @@ nav.navbar {
     width: 70%;
 }
 .home2-flower{
-    width: 200px;
+    width: 170px;
 }
 .home2-hr{
     width: 35%; 
@@ -187,17 +188,33 @@ nav.navbar {
     opacity: 1;
 }
 .home2-paragraph{
-    font-size: 30px; 
+    font-size: 20px; 
     opacity: 0.7;
 }
 
 /* HOME 3 */
 .home3-bg{
-    background-image: url('images/latar.png'); 
+    background-image: url('../images/latar.png'); 
     width: 100%; 
     height: 300px;
 }
-.home3-
+
+/* HOME 4 */
+.home4-img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 10px var(--dark-green); 
+}
+.home4-paragraph{
+    font-size: 20px; 
+    opacity: 0.7;
+    text-align: justify;
+}
+
+/* HOME 5 */ 
+.home5-height{
+    height:45vh;
+}
 
 /* RESPONSIVE WEB */
 @media only screen and (max-width: 767px) {
